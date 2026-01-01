@@ -34,20 +34,31 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <div className="py-20 lp-container max-w-3xl">
-      <h1 className="text-4xl font-bold text-lp-black mb-12">Frequently Asked Questions</h1>
-      <div className="space-y-8">
+    <div className="py-20 lp-container max-w-4xl">
+      <h1 className="text-4xl font-extrabold text-lp-navy mb-12 leading-tight">
+        Frequently Asked <span className="text-lp-trust">Questions</span>
+      </h1>
+      <div className="space-y-12">
         {faqs.map((faq, idx) => (
-          <div key={idx} className="border-b border-gray-200 pb-8">
-            <h3 className="text-xl font-bold text-lp-black mb-4">{faq.q}</h3>
-            <p className="text-lp-dark leading-relaxed">{faq.a}</p>
+          <div key={idx} className="border-b border-lp-sand pb-10">
+            <h3 className="text-2xl font-bold text-lp-navy mb-5">{faq.q}</h3>
+            <p className="text-lp-slate leading-relaxed text-lg">{faq.a}</p>
           </div>
         ))}
       </div>
-      <div className="mt-16 p-8 bg-lp-light rounded-xl border border-gray-200">
-        <h4 className="font-bold mb-4">Still have questions?</h4>
-        <p className="text-sm text-lp-dark mb-6">If you are ready for a serious structural briefing, we recommend submitting a professional application.</p>
-        <Link to="/apply" className="text-lp-red font-bold hover:underline">Apply for Guidance &rarr;</Link>
+      <div className="mt-20 p-12 bg-lp-sand rounded-[2.5rem] border border-gray-100 shadow-sm flex flex-col md:flex-row items-center gap-10">
+        <div className="flex-grow">
+          <h4 className="text-2xl font-bold text-lp-navy mb-4">Still have questions?</h4>
+          <p className="text-lp-slate leading-relaxed">
+            If you are ready for a serious structural briefing, we recommend submitting a professional application for vetting.
+          </p>
+        </div>
+        <Link 
+          to="/apply" 
+          className="bg-lp-trust text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-lp-navy transition-all shadow-xl shadow-lp-trust/20 active:scale-[0.98] whitespace-nowrap"
+        >
+          Apply for Guidance &rarr;
+        </Link>
       </div>
     </div>
   );
