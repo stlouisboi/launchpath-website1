@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -8,6 +9,8 @@ import Resources from './pages/Resources';
 import About from './pages/About';
 import Apply from './pages/Apply';
 import FAQ from './pages/FAQ';
+import CaseStudies from './pages/CaseStudies';
+import InstitutionalAssistant from './components/InstitutionalAssistant';
 
 // Scroll to top on navigation
 const ScrollToTop = () => {
@@ -32,9 +35,11 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/apply" element={<Apply />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
           </Routes>
         </main>
         <Footer />
+        <InstitutionalAssistant />
       </div>
     </Router>
   );

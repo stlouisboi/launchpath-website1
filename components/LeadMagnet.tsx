@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const LeadMagnet: React.FC = () => {
@@ -20,7 +21,7 @@ const LeadMagnet: React.FC = () => {
           The First 90 Days Risk Map™ has been prioritized for your review. Download the institutional briefing below.
         </p>
         <button 
-          className="bg-lp-gold text-lp-navy px-12 py-5 rounded-2xl font-black transition-all text-xl shadow-2xl hover:bg-lp-white-off active:scale-[0.98] flex items-center gap-4 mx-auto"
+          className="bg-lp-navy text-lp-white-off px-12 py-5 rounded-2xl font-black transition-all text-xl shadow-2xl hover:bg-lp-gold hover:text-lp-navy active:scale-[0.98] flex items-center gap-4 mx-auto"
           onClick={() => window.open('https://example.com/risk-map.pdf', '_blank')}
         >
           Download PDF Document

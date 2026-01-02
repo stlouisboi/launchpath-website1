@@ -22,10 +22,10 @@ const Navbar: React.FC = () => {
           </span>
         </Link>
         
-        <div className="flex items-center gap-8 text-sm font-bold">
+        <div className="flex items-center gap-6 lg:gap-8 text-sm font-bold">
           <Link to="/how-it-works" className="text-lp-white-off hover:text-lp-gold transition-colors hidden sm:block">How It Works</Link>
           <Link to="/resources" className="text-lp-white-off hover:text-lp-gold transition-colors hidden sm:block">Resources</Link>
-          <Link to="/faq" className="text-lp-white-off hover:text-lp-gold transition-colors hidden lg:block">FAQ</Link>
+          <Link to="/faq" className="text-lp-white-off hover:text-lp-gold transition-colors hidden sm:block">FAQ</Link>
           <Link to="/about" className="text-lp-white-off hover:text-lp-gold transition-colors hidden sm:block">About</Link>
           <Link 
             to="/apply" 

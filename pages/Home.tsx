@@ -17,15 +17,15 @@ const Home: React.FC = () => {
       <section className="bg-lp-white-off py-20 md:py-32 overflow-hidden border-b border-lp-slate/10">
         <div className="lp-container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fadeIn">
-            <div className="lp-alert mb-8 inline-block rounded-lg font-bold text-xs uppercase tracking-widest">
-              Institutional Grade Framework
+            <div className="lp-alert mb-8 inline-block rounded-xl font-black text-[10px] uppercase tracking-[0.3em] border-l-4 border-lp-gold">
+              Institutional Grade Risk Management
             </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-lp-navy leading-tight mb-8">
-              Protect your authority <br/>
-              <span className="text-lp-gold">before you haul.</span>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-lp-navy leading-[1.1] mb-8">
+              Your authority is an asset. <br/>
+              <span className="text-lp-gold">Protect it like one.</span>
             </h1>
             <p className="text-xl text-lp-slate mb-12 leading-relaxed max-w-xl">
-              LaunchPath provides compliance-first education for serious owner-operators. We prioritize <span className="text-lp-navy font-bold">structural stability</span> over revenue hype.
+              Don't risk your motor carrier license before the first mile. LaunchPath delivers the <span className="text-lp-navy font-bold">Authority-First Sequence™</span> required to secure your business, your insurance, and your legacy.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Link to="/apply" className="lp-primary-btn text-lg min-w-[240px]">
@@ -39,9 +39,9 @@ const Home: React.FC = () => {
           <div className="relative hidden lg:block">
             <div className="bg-lp-navy rounded-[3rem] p-4 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
                <img 
-                src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800&grayscale=1" 
-                alt="Trucking Infrastructure" 
-                className="w-full h-[500px] object-cover rounded-[2.5rem] opacity-60"
+                src="https://images.unsplash.com/photo-1501700489910-fb3a7eba0d73?q=80&w=2040&auto=format&fit=crop" 
+                alt="Professional Logistics Truck on Open Road" 
+                className="w-full h-[500px] object-cover rounded-[2.5rem] opacity-70"
               />
               <div className="absolute inset-0 flex items-center justify-center p-12">
                 <div className="bg-lp-white-off p-10 rounded-3xl shadow-2xl border-l-8 border-lp-gold -rotate-2">
@@ -67,7 +67,7 @@ const Home: React.FC = () => {
           <div className="max-w-3xl mb-20">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-8">Why do new <br/><span className="text-lp-gold underline decoration-lp-gold/30">carriers fail?</span></h2>
             <p className="text-xl text-lp-slate leading-relaxed">
-              Most operators prioritize "moving freight" over building a sustainable authority. This upside-down model creates critical structural gaps.
+              Most operators prioritize "moving freight" over building a sustainable authority. This upside-down model creates critical structural gaps that underwriters and regulators notice immediately.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -147,9 +147,14 @@ const Home: React.FC = () => {
             <p className="text-lp-slate font-medium mb-10 leading-relaxed">
               We work with serious professionals who understand that a trucking company is a high-risk logistics business, not a "money hack."
             </p>
-            <Link to="/apply" className="lp-primary-btn w-full block">
-              Apply if you’re ready to build it right.
-            </Link>
+            <div className="flex flex-col gap-4">
+               <Link to="/apply" className="lp-primary-btn w-full block">
+                 Apply if you’re ready to build it right.
+               </Link>
+               <Link to="/faq" className="text-lp-slate font-bold text-sm text-center hover:text-lp-navy transition-colors">
+                  Frequently Asked Questions &rarr;
+               </Link>
+            </div>
           </div>
         </div>
       </section>
